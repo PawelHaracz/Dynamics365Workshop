@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrnEntities.cs" />
+    <Compile Include="Examples\FetchingData.cs" />
     <Compile Include="Plugins\PluginWithConfiguration.cs" />
     <Compile Include="Plugins\SimplePlugin.cs" />
     <Compile Include="Plugins\UseEgcPlugin.cs" />
@@ -76,5 +77,6 @@
   <ItemGroup>
     <Content Include="Integrations\Links.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
