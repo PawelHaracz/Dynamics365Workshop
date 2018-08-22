@@ -1,0 +1,3 @@
+.\CrmSvcUtil.exe /url:https://m365x032832.api.crm4.dynamics.com/XRMServices/2011/Organization.svc /out:CrnEntities.cs /username:"admin@M365x032832.onmicrosoft.com" /password:"pawel.harac@5471" /namespace:CRM.Workshops /serviceContextName:XrmContext
+
+https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool

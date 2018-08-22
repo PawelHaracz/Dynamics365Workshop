@@ -1,0 +1,2 @@
+﻿https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-code-azure-integrations
+https://code.msdn.microsoft.com/Sample-Dynamics-365-and-6a95df2a
