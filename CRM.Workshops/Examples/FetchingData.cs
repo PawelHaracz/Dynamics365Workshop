@@ -83,6 +83,16 @@ namespace CRM.Workshops.Examples
             return entities;
         }
 
+        public IEnumerable<Entity> GetAccountUsingLinqu()
+        {
+            using (var context = new XrmContext(_organizationService))
+            {
+                var accounts = context.AccountSet.Where(a => a.Name == "Bury").ToArray();
+
+                return accounts;
+            }
+        }
+
         public Entity Retrive(Guid accountId)
         {
             var entity = _organizationService.Retrieve("account", accountId, new ColumnSet(false));

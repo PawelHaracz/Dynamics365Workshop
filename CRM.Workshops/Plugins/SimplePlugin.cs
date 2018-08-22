@@ -4,6 +4,10 @@ using Microsoft.Xrm.Sdk;
 
 namespace CRM.Workshops.Plugins
 {
+    /// <summary>
+    /// https://msdn.microsoft.com/en-us/library/gg328576.aspx -> list all supported messages
+    /// https://msdn.microsoft.com/en-us/library/gg328576.aspx -> sdk
+    /// </summary>
     public class SimplePlugin : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider) // serviceProvider -> Factory of all CRM's service (some kind of DI)
