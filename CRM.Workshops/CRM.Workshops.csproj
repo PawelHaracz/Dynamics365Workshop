@@ -114,6 +114,7 @@
     <Compile Include="CrnEntities.cs" />
     <Compile Include="Examples\Crud.cs" />
     <Compile Include="Examples\FetchingData.cs" />
+    <Compile Include="Integrations\DirectDynamicsAccessor.cs" />
     <Compile Include="Plugins\PluginWithConfiguration.cs" />
     <Compile Include="Plugins\SimplePlugin.cs" />
     <Compile Include="Plugins\UseEgcPlugin.cs" />

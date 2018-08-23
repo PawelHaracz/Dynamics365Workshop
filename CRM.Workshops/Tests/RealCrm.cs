@@ -11,9 +11,10 @@ namespace CRM.Workshops.Tests
         private readonly XrmFakedContext _fakedContextctx;
         public RealCrm()
         {
-            _fakedContextctx = new XrmRealContext(new CrmServiceClient("admin@m365x032832.onmicrosoft.com", CrmServiceClient.MakeSecureString("pawel.harac@5471"), "EMEA", "m365x032832"));
-            
-            
+            _fakedContextctx = new XrmRealContext(new CrmServiceClient("admin@m365x032832.onmicrosoft.com", CrmServiceClient.MakeSecureString("pawel.harac@5471"), "EMEA", "m365x032832", isOffice365: true));
+            var z = _fakedContextctx.GetOrganizationService();
+
+
         }
     }
 }
