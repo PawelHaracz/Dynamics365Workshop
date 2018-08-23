@@ -1,14 +1,15 @@
 ﻿using System;
 using CRM.Workshops.Plugins;
 using FakeXrmEasy;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xrm.Sdk;
-using Xunit;
 
 namespace CRM.Workshops.Tests
 {
+    [TestClass]
     public class PluginTest
     {
-        [Fact]
+        [TestMethod]
         public void When_the_account_number_plugin_is_executed_it_adds_a_random_number_to_an_account_entity()
         {
             var fakedContext = new XrmFakedContext();
@@ -20,7 +21,7 @@ namespace CRM.Workshops.Tests
             var fakedPlugin = fakedContext.ExecutePluginWithTarget<SimplePlugin>(target);
 
             //Assert that the target contains a new attribute
-            Assert.True(target.Attributes.ContainsKey("accountnumber"));
+            Assert.IsTrue(target.Attributes.ContainsKey("accountnumber"));
 
         }
     }
